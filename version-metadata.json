@@ -1,0 +1,10 @@
+{
+  "files": {
+    "file1.txt": {
+      "version": "1.01"
+    },
+    "file2.txt": {
+      "version": "1.01"
+    }
+  }
+}
