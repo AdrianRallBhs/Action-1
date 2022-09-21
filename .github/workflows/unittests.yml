@@ -1,11 +1,33 @@
-name: Tests
+image: microsoft/dotnet:latest
+stages:
+  - build
+  - test
+  - deploy
 
-on: push
+before_script:
+  - "cd 03_Implementierung"
+  - "dotnet restore"
 
-jobs:
-  tests:
-    name: Unit Testing
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v2.1.0
-      - run: dotnet test
+build:
+  stage: build
+  script:
+    - "dotnet build --output output"
+    
+test:
+  stage: test
+  script:
+  - "dotnet test"
+  dependencies:
+  - build
+
+deploy:
+  stage: deploy
+  script:
+  - "dotnet build --configuration Release --output output"
+  artifacts:
+    name: "Release"
+    paths:
+      - 03_Implementierung/output/*
+  dependencies:
+  - build
+  - test

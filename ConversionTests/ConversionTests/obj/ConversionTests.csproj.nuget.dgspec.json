@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\ConversionTests\\ConversionTests.csproj": {}
+    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\ConversionTests\\ConversionTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\ConversionTests\\ConversionTests.csproj": {
+    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\ConversionTests\\ConversionTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\ConversionTests\\ConversionTests.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\ConversionTests\\ConversionTests.csproj",
         "projectName": "ConversionTests",
-        "projectPath": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\ConversionTests\\ConversionTests.csproj",
+        "projectPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\ConversionTests\\ConversionTests.csproj",
         "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\ConversionTests\\obj\\",
+        "outputPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\ConversionTests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\TempConvert.csproj": {
-                "projectPath": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\TempConvert.csproj"
+              "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\TempConvert.csproj": {
+                "projectPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\TempConvert.csproj"
               }
             }
           }
@@ -49,24 +49,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "MSTest.TestAdapter": {
-              "target": "Package",
-              "version": "[2.2.7, )"
-            },
-            "MSTest.TestFramework": {
-              "target": "Package",
-              "version": "[2.2.7, )"
-            },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[16.11.0, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.1.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -77,23 +59,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\TempConvert.csproj": {
+    "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\TempConvert.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\TempConvert.csproj",
+        "projectUniqueName": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\TempConvert.csproj",
         "projectName": "TempConvert",
-        "projectPath": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\TempConvert.csproj",
+        "projectPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\TempConvert.csproj",
         "packagesPath": "C:\\Users\\Adrian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Adrian\\source\\repos\\ConversionTests\\Convert\\obj\\",
+        "outputPath": "C:\\Users\\Adrian\\Documents\\GitHub\\Action-1\\ConversionTests\\Convert\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -137,15 +114,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
