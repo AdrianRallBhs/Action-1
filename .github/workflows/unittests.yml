@@ -1,31 +1,20 @@
-image: microsoft/dotnet:latest
-stages:
-  - build
-  - test
-  - deploy
+name: Tests
 
-before_script:
-  - "cd 03_Implementierung"
-  - "dotnet restore"
+on:
+  push:
 
-build:
-  stage: build
-  script:
-    - "dotnet build --output output"
-    
-test:
-  stage: test
-  script:
-  - "dotnet test"
-  dependencies:
-  - build
+jobs:
+  run-tests:
+  run-on: windows-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      with:
+        build: npm run build
+        start: npm start
 
-deploy:
-  stage: deploy
-  script:
-  - "dotnet build --configuration Release --output output"
-  artifacts:
-    name: "Release"
-  dependencies:
-  - build
-  - test
+    - name: Jest run
+      run: npm test
+
