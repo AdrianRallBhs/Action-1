@@ -1,15 +1,11 @@
-name: Unit-Testing
+name: Tests
 
-on:
-  push:
-    branches: [main, master, feature/*]
-  pull_request:
-    branches: [main, master]
+on: push
 
 jobs:
-  test:
+  tests:
+    name: Unit Testing
     runs-on: windows-latest
-
-  steps:
-    - name: Testing Unit Tests
-    - run: dotnet test
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - run: dotnet test
