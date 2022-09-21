@@ -26,8 +26,6 @@ deploy:
   - "dotnet build --configuration Release --output output"
   artifacts:
     name: "Release"
-    paths:
-      - 03_Implementierung/output/*
   dependencies:
   - build
   - test
